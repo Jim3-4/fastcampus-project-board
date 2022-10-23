@@ -24,3 +24,5 @@ spring:
   data.rest:
     base-path: /api
     detection-strategy: annotated
+    #디커플로직 활성화, 언제든지 끄고싶을때도 있으니까 프로퍼티로
+  thymeleaf3.decoupled-logic: true
