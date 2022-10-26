@@ -33,6 +33,8 @@ public record ArticleDto(
         );
     }
 
+    //DTO로 부터 엔티티 생성 
+    //ARticle은 dto 의 존재를 몰라도된다. dto만 연관관계 매핑을 하기위해 dto만 article의 존재를 알고 있다.
     public Article toEntity() {
         return Article.of(
                 userAccountDto.toEntity(),
