@@ -21,6 +21,7 @@ public record ArticleResponse(
 
     public static ArticleResponse from(ArticleDto dto) {
         String nickname = dto.userAccountDto().nickname();
+        //닉네임 없다면 아이디로 가져오도록
         if (nickname == null || nickname.isBlank()) {
             nickname = dto.userAccountDto().userId();
         }
