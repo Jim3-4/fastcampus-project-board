@@ -16,4 +16,28 @@
             </attr>
         </attr>
     </attr>
+
+
+    <attr sel="#pagination">
+        <attr sel="li[0]/a"
+              th:text="'previous'"
+              th:href="@{/articles(page=${articles.number - 1})}"
+              th:class="'page-link' + (${articles.number} <= 0 ? ' disabled' : '')"
+        />
+    <!--    페이징바에서, 현재페이지는 누를필요없고,
+        이전페이지가 없다면 , 끝에 도달햇을때 disabled
+        현재페이지라면 disabled-->
+        <attr sel="li[1]" th:class="page-item" th:each="pageNumber : ${paginationBarNumbers}">
+            <attr sel="a"
+                  th:text="${pageNumber + 1}"
+                  th:href="@{/articles(page=${pageNumber})}"
+                  th:class="'page-link' + (${pageNumber} == ${articles.number} ? ' disabled' : '')"
+            />
+        </attr>
+        <attr sel="li[2]/a"
+              th:text="'next'"
+              th:href="@{/articles(page=${articles.number + 1})}"
+              th:class="'page-link' + (${articles.number} >= ${articles.totalPages - 1} ? ' disabled' : '')"
+        />
+    </attr>
 </thlogic>
