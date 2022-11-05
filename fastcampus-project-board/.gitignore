@@ -1,16 +1,15 @@
 # Created by https://www.toptal.com/developers/gitignore/api/java,gradle,intellij+all,windows,macos,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,gradle,intellij+all,windows,macos,visualstudiocode
 
+### Querydsl
+/src/main/generated
+
+### JPA Buddy
+.jpb/
+
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-###Querydsl
-/src/main/generated
-
-
-###JPA Buddy
-.jpb/
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -93,8 +92,8 @@ fabric.properties
 
 .idea/*
 
-!.idea/codeStyles
-!.idea/runConfigurations
+#!.idea/codeStyles
+#!.idea/runConfigurations
 
 ### Java ###
 # Compiled class file
@@ -228,9 +227,5 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
-
-### Gradle Patch ###
-# Java heap dump
-*.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/java,gradle,intellij+all,windows,macos,visualstudiocode
