@@ -14,16 +14,15 @@ spring:
     password: k19931223!
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
+    open-in-view: false
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
     show-sql: true
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
-    open-in-view: false
   sql.init.mode: always
   data.rest:
     base-path: /api
     detection-strategy: annotated
-    #디커플로직 활성화, 언제든지 끄고싶을때도 있으니까 프로퍼티로
   thymeleaf3.decoupled-logic: true

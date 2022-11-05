@@ -1,5 +1,5 @@
 package com.fastcampus.projectboard.domain;
-import com.fastcampus.projectboard.domain.UserAccount;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,7 +10,6 @@ import java.util.Objects;
 import java.util.Set;
 
 @Getter
-// AuditingFields의 toString을 찍기위해 callSuper=true
 @ToString(callSuper = true)
 @Table(indexes = {
         @Index(columnList = "title"),
@@ -25,7 +24,7 @@ public class Article extends AuditingFields {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Setter @ManyToOne(optional = false) private UserAccount userAccount; // 유저 정보 (ID)
+    @Setter @ManyToOne(optional = false) @JoinColumn(name = "userId") private UserAccount userAccount; // 유저 정보 (ID)
 
     @Setter @Column(nullable = false) private String title; // 제목
     @Setter @Column(nullable = false, length = 10000) private String content; // 본문
@@ -33,7 +32,6 @@ public class Article extends AuditingFields {
     @Setter private String hashtag; // 해시태그
 
     @ToString.Exclude
-    //시간순정렬
     @OrderBy("createdAt DESC")
     @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
     private final Set<ArticleComment> articleComments = new LinkedHashSet<>();

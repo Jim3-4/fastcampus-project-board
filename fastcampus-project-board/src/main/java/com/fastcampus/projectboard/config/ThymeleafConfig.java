@@ -21,7 +21,7 @@ public class ThymeleafConfig {
         return defaultTemplateResolver;
     }
 
-//롬복을 이용해서 생성자와 getter 설정
+
     @RequiredArgsConstructor
     @Getter
     @ConstructorBinding
