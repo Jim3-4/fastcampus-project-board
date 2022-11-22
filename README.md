@@ -8,7 +8,7 @@
 
 <img src="https://github.com/Jim3-4/fastcampus-projectboard/blob/main/fastcampus-project-board/document/%EB%A9%94%EC%9D%B8%EC%9D%B4%EB%AF%B8%EC%A7%80.jpg">
 
-- Spring boot을 더 자세히 공부하기 위해 인터넷 강의와 구글링을 하며 백엔드 웹 갭라에 필요한 실무 활용법을 익혔습니다. 
+- Spring boot을 더 자세히 공부하기 위해 인터넷 강의와 구글링을 하며 백엔드 웹 개발에 필요한 실무 활용법을 익혔습니다. 
 - 요구사항을 분석하여 아키텍처 설계 및 데이터베이스를 구성하고, Spring boot 2.7.0 버전을 이용하여 개발, 테스트 및 배포를 진행합니다. 
 
 
