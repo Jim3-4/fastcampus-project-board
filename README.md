@@ -80,44 +80,21 @@ Heroku
 
 <br>
 
-# 🔎 Detail
+## 🖥 기능
 
-
-
-### ✔️
-
-
-
-<img src="https://github.com/Jim3-4/JSP_Project/blob/main/img/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.png">
-
-- 
-
-
- **📌
-
-```
-/md/mdmain.do= command.MdMainHandler
-/md/logon.do = command.MdMainLogonHandler
-/md/guest.do = command.GuestHandler
-/md/register.do = command.RegisterHandler
-/md/enterJoin.do=command.JoinMemberHandler
-```
-
-<br>
-
-**📌Handler** 
-
-  <a href="https://github.com/Jim3-4/JSP_Project/blob/main/mcNew/src/main/java/command/JoinMemberHandler.java">JoinMemberHandler 소스코드 보기</a>
-
-- 
-
-
+- 뷰 만들기
+- 각 게시글 페이지로 이동
+- 게시판 페이징
+- 게시판 정렬
+- 게시판 검색
+- 게시글 댓글
+- 인증기능 구현
 
 
 <br><br>
 
 ## 💡 느낀점
 
-
-
-- 
+-Test케이스 작성을 프로젝트하면서 처음 작성해보는데, 개발 시에 기능이 올바르게 구현되고 있는지 알 수 있기에 중요합니다.<br>
+-다양한 애노테이션의 기능에 대해 알게되었습니다. 
+-깃 커밋메세지 작성방법을 규칙에 따라 체계적으로 배우게 되었습니다. 
