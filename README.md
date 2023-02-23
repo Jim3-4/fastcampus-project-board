@@ -70,7 +70,7 @@ Heroku
 
 
 
-## 🧲 url 설명과 입력데이터 구성 
+## 🧲 api설명
 
 <img src="https://github.com/Jim3-4/fastcampus-projectboard/blob/main/fastcampus-project-board/document/url%EC%84%A4%EB%AA%85.jpg">
 
